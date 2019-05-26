@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DetailActivity" >
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_item_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    tools:src="@android:color/darker_gray" android:layout_weight="1" android:padding="20dp"/>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical" android:layout_weight="1" android:layout_gravity="center_vertical">
+                <TextView
+                        android:id="@+id/tv_item_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="Soekarno"
+                        android:textStyle="bold"
+                        android:textSize="24sp"
+                        android:layout_marginBottom="8dp" android:textColor="@android:color/black"
+                        android:gravity="center_vertical" android:layout_marginEnd="20dp"/>
+                <TextView
+                        android:id="@+id/tv_item_remarks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="Presiden Pertama RI" android:textColor="@android:color/black"
+                        android:gravity="center_vertical" android:textSize="18sp" android:layout_marginEnd="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+                android:text="Myoui Mina (bahasa Jepang: 名井 南; lahir di San Antonio, Amerika Serikat, 24 Maret 1997; umur 22 tahun), juga dikenal sebagai MINA, adalah seorang penyanyi Jepang-Amerika Serikat. Ia adalah anggota dari grup musik K-pop mancanegara, TWICE, yang dibentuk oleh JYP Entertainment pada tahun 2015 melalui acara realitas SIXTEEN.[2] Meskipun dia juga memiliki kewarganegaraan Amerika, kedua orangtua-nya adalah warga negara Jepang."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/tv_description"
+                android:textSize="18sp" android:paddingStart="20dp" android:paddingEnd="20dp" android:paddingTop="20dp"
+                android:paddingBottom="20dp" android:textColor="@android:color/black"/>
+        <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:paddingStart="20dp" android:paddingEnd="20dp"
+                android:paddingTop="10dp" android:paddingBottom="10dp">
+
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+
+                <TextView
+                        android:text="Lahir"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"/>
+                <TextView
+                        android:id="@+id/tv_dob"
+                        android:text="15 Juni 1992"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"/>
+            </TableRow>
+
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+
+                <TextView
+                        android:text="Warga Negara"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"/>
+                <TextView
+                        android:id="@+id/tv_citizen"
+                        android:text="Republik Tiongkok"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"/>
+            </TableRow>
+
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
+
+                <TextView
+                        android:text="Tinggal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"/>
+                <TextView
+                        android:id="@+id/tv_country"
+                        android:text="Seoul"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"/>
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>
